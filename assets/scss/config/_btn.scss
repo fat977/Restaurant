@@ -1,0 +1,25 @@
+@mixin btn-style{
+    .btn {
+        border: 1px solid var(--main-color);
+        position: relative;
+        overflow: hidden;
+        background-color: var(--main-color);
+        color: var(--black-color);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: all 650ms;
+        }
+
+        &:hover::before {
+            left: 100%;
+            color: var(--white-color) !important;
+        }
+    }
+}

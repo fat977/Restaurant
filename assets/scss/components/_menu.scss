@@ -1,0 +1,50 @@
+
+.menu {
+    @include horizontal_line;
+
+    .filter-item {
+        border: var(--border);
+        color: var(--main-color);
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .filter-item.active {
+        color: var(--white-color);
+        background-color: var(--main-color);
+    }
+
+    .menu-item {
+        display: none;
+        transition: 2s;
+      
+        table>:not(caption)>*>* {
+            background-color: var(--black-color) !important;
+            color: var(--white-color) !important;
+
+            .name{
+                color: var(--main-color) !important;
+            }
+
+        }
+        .menu-item-inner img {
+            /* box-shadow: rgba(255,145,0, 0.4) -5px 5px, rgba(255,145,0, 0.3) -10px 10px, rgba(255,145,0, 0.2) -15px 15px, rgba(255,145,0, 0.1) -20px 20px, rgba(2255,145,0, 0.05) -25px 25px; */
+            box-shadow: rgba(255,145,0, 0.4) 0px 5px, rgba(255,145,0, 0.3) 0px 10px, rgba(255,145,0, 0.2) 0px 15px, rgba(255,145,0, 0.1) 0px 20px, rgba(255,145,0, 0.05) 0px 25px;
+            object-fit:cover;
+        }
+    }
+
+    .menu-item.chicken {
+        display: block;
+    }
+
+    .menu-item.show {
+        display: block;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .menu-item.hide {
+        display: none;
+    }
+
+}

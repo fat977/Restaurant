@@ -1,0 +1,20 @@
+#gallery {
+    @include horizontal_line;
+    a {
+        position: relative;
+    }
+
+    .gradient {
+        width: 100% !important;
+        height: 100%;
+        background-image: radial-gradient(transparent, black);
+        opacity: 1;
+        position: absolute;
+    }
+
+    img {
+        width: 100% !important;
+
+    }
+
+}

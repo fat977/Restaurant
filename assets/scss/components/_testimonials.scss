@@ -1,0 +1,47 @@
+#testimonials {
+    background: linear-gradient(rgba(16, 16, 16, 0.591), rgba(15, 15, 15, 0.671)),
+        url("../../assets/img/testimonials/photo-1517248135467-4c7edcad34c4.avif");
+
+    @include background;
+
+    .owl-carousel {
+        .text {
+            background-color: rgba(133, 123, 123, 0.5) !important;
+            position: relative;
+
+            .fa-solid {
+                color: var(--main-color);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -1.5rem;
+                width: 0;
+                height: 0;
+                border-left: 1.5rem solid transparent;
+                border-right: 1.5rem solid transparent;
+                border-top: 1.5rem solid rgba(255, 255, 255, 0.2);
+                margin-left: 30px;
+            }
+
+        }
+
+        .person {
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+        }
+
+        p,
+        span {
+            font-family: var(--body-font);
+        }
+
+    }
+
+   @include horizontal_line;
+    
+}

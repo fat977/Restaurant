@@ -1,0 +1,30 @@
+@mixin horizontal_line{
+    .hr-lines {
+        position: relative;
+        max-width: 500px;
+      
+        text-align: center;
+    
+        &::before {
+            content: " ";
+            height: 2px;
+            width: 130px;
+            background: var(--main-color);
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+    
+        &::after {
+            content: " ";
+            height: 2px;
+            width: 130px;
+            background: var(--main-color);
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+    }
+}

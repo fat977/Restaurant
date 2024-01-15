@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+header,section,footer{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h5,.filter-item,button{
+    font-family: var(--second-font);
+    font-weight: bolder;
+}
+
+p,td,form,.contact-info:not(h3){
+    font-family: var(--body-font);
+}

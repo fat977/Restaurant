@@ -1,0 +1,42 @@
+#chefs{
+    @include horizontal_line;
+
+    .chef{
+
+        border: none;
+        border-radius: 0;
+        overflow: hidden;
+        .card-img{
+            transition: all 650ms ease-in-out;
+        }
+       .info{
+            transition: all 650ms ease-in-out;
+            opacity: 0;
+            line-height: 50px;
+            .fa-brands{
+                &:hover{
+                    color : var(--main-color);
+                }
+            }  
+          
+            .subtitle{
+                font-weight: bolder;
+                color: var(--main-color);
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+       }
+    
+       &:hover{
+            > .card-img{
+                transform: scale(1.1);
+                opacity: 0.6;
+            }
+           
+            > .info{
+                opacity: 1;
+                color: var(--white-color) ;
+            }
+       }
+    }
+}
+

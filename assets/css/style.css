@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Open+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+header, section, footer {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h5, .filter-item, button {
+  font-family: var(--second-font);
+  font-weight: bolder;
+}
+
+p, td, form, .contact-info:not(h3) {
+  font-family: var(--body-font);
+}
+
+/*=============== GOOGLE FONTS ===============*/
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --white-color: #FFF;
+  --black-color: #000;
+  --main-color: #ff9100;
+  /*========== transition ==========*/
+  --transition: all .2s ease-out;
+  /*========== shadows ==========*/
+  --box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
+  /*========== Font and typography ==========*/
+  --body-font: "Open Sans", sans-serif;
+  --second-font: "Average Sans", sans-serif;
+  /*========== Font weight ==========*/
+  --font-semi-bold: 800;
+  /*========== Margenes Bottom ==========*/
+  /*========== z index ==========*/
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.header {
+  background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(15, 15, 15, 0.5)), url("../img/header/AM-Knizek-Photo_ycyrkg.jpg");
+  background-position: 100% 80%;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .btn {
+  border: 1px solid var(--main-color);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--main-color);
+  color: var(--black-color);
+}
+.header .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: all 650ms;
+}
+.header .btn:hover::before {
+  left: 100%;
+  color: var(--white-color) !important;
+}
+.header h2, .header h1 {
+  font-size: 50px;
+}
+@media screen and (max-width: 764px) {
+  .header {
+    background-position: center;
+  }
+  .header p.w-50 {
+    width: 75% !important;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.navbar .navbar-toggler {
+  background-color: var(--main-color);
+}
+.navbar .offcanvas {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.navbar .offcanvas .offcanvas-title {
+  font-family: --second-font !important;
+  font-weight: 900;
+  font-size: 50px;
+  text-shadow: 0px -2px 4px #fff, 0px -2px 10px #FF3, 0px -10px 20px #F90, 0px -20px 40px #C33;
+}
+.navbar .offcanvas ul li a {
+  position: relative;
+  color: var(--white-color) !important;
+  font-family: var(--second-font) !important;
+  font-weight: 900;
+  font-size: larger;
+}
+.navbar .offcanvas .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: var(--main-color) !important;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 650ms;
+}
+.navbar .offcanvas .nav-link:hover::before {
+  transform: scaleX(1);
+}
+.navbar .offcanvas .nav-link:hover {
+  color: var(--main-color) !important;
+}
+.navbar .offcanvas .btn-close {
+  background-color: var(--main-color) !important;
+}
+
+#about {
+  background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(15, 15, 15, 0.5)), url("../../assets/img/about/clem-onojeghuo-zlABb6Gke24-unsplash.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#about .hr-lines {
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+}
+#about .hr-lines::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#about .hr-lines::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+#chefs .hr-lines {
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+}
+#chefs .hr-lines::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#chefs .hr-lines::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+#chefs .chef {
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+}
+#chefs .chef .card-img {
+  transition: all 650ms ease-in-out;
+}
+#chefs .chef .info {
+  transition: all 650ms ease-in-out;
+  opacity: 0;
+  line-height: 50px;
+}
+#chefs .chef .info .fa-brands:hover {
+  color: var(--main-color);
+}
+#chefs .chef .info .subtitle {
+  font-weight: bolder;
+  color: var(--main-color);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#chefs .chef:hover > .card-img {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+#chefs .chef:hover > .info {
+  opacity: 1;
+  color: var(--white-color);
+}
+
+.menu .hr-lines {
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+}
+.menu .hr-lines::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.menu .hr-lines::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.menu .filter-item {
+  border: var(--border);
+  color: var(--main-color);
+  cursor: pointer;
+  transition: 1s;
+}
+.menu .filter-item.active {
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+.menu .menu-item {
+  display: none;
+  transition: 2s;
+}
+.menu .menu-item table > :not(caption) > * > * {
+  background-color: var(--black-color) !important;
+  color: var(--white-color) !important;
+}
+.menu .menu-item table > :not(caption) > * > * .name {
+  color: var(--main-color) !important;
+}
+.menu .menu-item .menu-item-inner img {
+  /* box-shadow: rgba(255,145,0, 0.4) -5px 5px, rgba(255,145,0, 0.3) -10px 10px, rgba(255,145,0, 0.2) -15px 15px, rgba(255,145,0, 0.1) -20px 20px, rgba(2255,145,0, 0.05) -25px 25px; */
+  box-shadow: rgba(255, 145, 0, 0.4) 0px 5px, rgba(255, 145, 0, 0.3) 0px 10px, rgba(255, 145, 0, 0.2) 0px 15px, rgba(255, 145, 0, 0.1) 0px 20px, rgba(255, 145, 0, 0.05) 0px 25px;
+  object-fit: cover;
+}
+.menu .menu-item.chicken {
+  display: block;
+}
+.menu .menu-item.show {
+  display: block;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.menu .menu-item.hide {
+  display: none;
+}
+
+#testimonials {
+  background: linear-gradient(rgba(16, 16, 16, 0.591), rgba(15, 15, 15, 0.671)), url("../../assets/img/testimonials/photo-1517248135467-4c7edcad34c4.avif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#testimonials .owl-carousel .text {
+  background-color: rgba(133, 123, 123, 0.5) !important;
+  position: relative;
+}
+#testimonials .owl-carousel .text .fa-solid {
+  color: var(--main-color);
+}
+#testimonials .owl-carousel .text::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  width: 0;
+  height: 0;
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid transparent;
+  border-top: 1.5rem solid rgba(255, 255, 255, 0.2);
+  margin-left: 30px;
+}
+#testimonials .owl-carousel .person img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#testimonials .owl-carousel p,
+#testimonials .owl-carousel span {
+  font-family: var(--body-font);
+}
+#testimonials .hr-lines {
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+}
+#testimonials .hr-lines::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#testimonials .hr-lines::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+#contact .hr-lines {
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+}
+#contact .hr-lines::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#contact .hr-lines::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+#contact form .form-control {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  transition: 0.5s;
+  color: var(--white-color) !important;
+}
+#contact form .form-control::placeholder {
+  color: var(--white-color) !important;
+}
+#contact form .form-control:focus {
+  border: 1px solid var(--main-color) !important;
+  box-shadow: none !important;
+}
+#contact form textarea {
+  resize: none;
+}
+#contact form .btn {
+  border: 1px solid var(--main-color);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--main-color);
+  color: var(--black-color);
+}
+#contact form .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: all 650ms;
+}
+#contact form .btn:hover::before {
+  left: 100%;
+  color: var(--white-color) !important;
+}
+#contact .contact-info:not(h3) {
+  line-height: 50px;
+}
+#contact .contact-info:not(h3) i {
+  color: var(--main-color);
+}
+
+#gallery .hr-lines {
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+}
+#gallery .hr-lines::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#gallery .hr-lines::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+#gallery a {
+  position: relative;
+}
+#gallery .gradient {
+  width: 100% !important;
+  height: 100%;
+  background-image: radial-gradient(transparent, black);
+  opacity: 1;
+  position: absolute;
+}
+#gallery img {
+  width: 100% !important;
+}
+
+i:hover {
+  color: var(--main-color);
+}
+
+/*# sourceMappingURL=style.css.map */
