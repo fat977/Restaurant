@@ -152,7 +152,7 @@ p, td, form, .contact-info:not(h3) {
 #about .hr-lines::before {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -162,7 +162,7 @@ p, td, form, .contact-info:not(h3) {
 #about .hr-lines::after {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -178,7 +178,7 @@ p, td, form, .contact-info:not(h3) {
 #chefs .hr-lines::before {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -188,7 +188,7 @@ p, td, form, .contact-info:not(h3) {
 #chefs .hr-lines::after {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -233,7 +233,7 @@ p, td, form, .contact-info:not(h3) {
 .menu .hr-lines::before {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -243,7 +243,7 @@ p, td, form, .contact-info:not(h3) {
 .menu .hr-lines::after {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -301,7 +301,7 @@ p, td, form, .contact-info:not(h3) {
 #testimonials .hr-lines::before {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -311,7 +311,7 @@ p, td, form, .contact-info:not(h3) {
 #testimonials .hr-lines::after {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -354,7 +354,7 @@ p, td, form, .contact-info:not(h3) {
 #contact .hr-lines::before {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -364,7 +364,7 @@ p, td, form, .contact-info:not(h3) {
 #contact .hr-lines::after {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -424,7 +424,7 @@ p, td, form, .contact-info:not(h3) {
 #gallery .hr-lines::before {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
@@ -434,7 +434,7 @@ p, td, form, .contact-info:not(h3) {
 #gallery .hr-lines::after {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: 110px;
   background: var(--main-color);
   display: block;
   position: absolute;
