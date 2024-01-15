@@ -293,6 +293,31 @@ p, td, form, .contact-info:not(h3) {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#testimonials .hr-lines {
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+}
+#testimonials .hr-lines::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#testimonials .hr-lines::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: var(--main-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
 #testimonials .owl-carousel .text {
   background-color: rgba(133, 123, 123, 0.5) !important;
   position: relative;
@@ -319,31 +344,6 @@ p, td, form, .contact-info:not(h3) {
 #testimonials .owl-carousel p,
 #testimonials .owl-carousel span {
   font-family: var(--body-font);
-}
-#testimonials .hr-lines {
-  position: relative;
-  max-width: 500px;
-  text-align: center;
-}
-#testimonials .hr-lines::before {
-  content: " ";
-  height: 2px;
-  width: 130px;
-  background: var(--main-color);
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-#testimonials .hr-lines::after {
-  content: " ";
-  height: 2px;
-  width: 130px;
-  background: var(--main-color);
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0;
 }
 
 #contact .hr-lines {

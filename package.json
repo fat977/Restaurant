@@ -1,7 +1,6 @@
 {
   "name": "restaurant",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch --style expanded assets/scss/style.scss assets/css/style.css"
@@ -10,5 +9,15 @@
   "license": "ISC",
   "dependencies": {
     "aos": "^2.3.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fat977/Restaurant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fat977/Restaurant/issues"
+  },
+  "homepage": "https://github.com/fat977/Restaurant#readme",
+  "description": ""
 }
